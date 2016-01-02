@@ -2,6 +2,8 @@
 **WeBox VN Engine by g_o -------- All rights reserved (c)**
 ***********************************************************
 
+OPEN WITH NOTEPAD++ !
+
 WSL = WeBox Scripting Language
 _______________________________________
 
