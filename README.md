@@ -9,9 +9,11 @@ In order to make your own initialization you need to go to "engine.js", and chan
 So you'll have:
 
 --------------------------engine.js--------------------------
+
 ...
 E = new Engine();
 // Other initializations: E.play('title_track.mp3'); E.textSpeed=X; etc...
+
 -------------------------------------------------------------
 
 Making new commands, editing them, making advanced GUI and more is requiring customization of engine.js.
