@@ -17,6 +17,8 @@ E = new Engine();
 
 -------------------------------------------------------------
 
-Making new commands, editing them, making advanced GUI and more is requiring customization of engine.js.
+Making new commands, editing them, making advanced GUI and more is requiring customization of engine.js, some in the same manner, some might require you to actually do it in the apropriate class (it's pretty well documented).
 Feel free to add those. You can see an example in my TheWhiteWorld repository.
+
+ENJOY!
 
