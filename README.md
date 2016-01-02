@@ -10,7 +10,9 @@ So you'll have:
 
 -------------------------------------------------------------
 ...
+
 E = new Engine();
+
 // Other initializations: E.play('title_track.mp3'); E.textSpeed=X; etc...
 
 -------------------------------------------------------------
