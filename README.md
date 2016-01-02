@@ -8,8 +8,7 @@ Supports all browsers of any version except IE (where support is from IE6 and ab
 In order to make your own initialization you need to go to "engine.js", and change the last lines.
 So you'll have:
 
---------------------------engine.js--------------------------
-
+-------------------------------------------------------------
 ...
 E = new Engine();
 // Other initializations: E.play('title_track.mp3'); E.textSpeed=X; etc...
