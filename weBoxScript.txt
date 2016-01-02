@@ -1,0 +1,60 @@
+***********************************************************
+**WeBox VN Engine by g_o -------- All rights reserved (c)**
+***********************************************************
+
+WSL = WeBox Scripting Language
+_______________________________________
+
+Made by g_o
+
+Syntax:
+--------------------------------------------
+*For quick text/nerration just type freely.
+*[cmd parameter1 parameter2 parameter3 ...
+*HTML TAGS ENABLED!
+*CAREFUL WHEN USING "[go ^" in a seperate line with choice flag on!!! MIGHT NOT INJECT VARS!
+	INSTEAD USE [go [prev_line ...] OR [go [set ...]
+
+
+Speak Syntax
+-----------------
+[Name_Mood]:[Saying]
+
+Language Constants
+-----------------
+^ - the returned value constant. (if == "goto"; executes a goto)
+^^ - IP (for goto, "choice" for choice)
+
+Note that Name_Mood should be also the name of the image file removing the ".png"!
+
+
+command				parameters									example										additional info
+---------------------------------------------------------------------------------------------------------------------------------------
+display	*			(image)path;  x; y; width; height; alpha	display "lol.png" "0" '0' '50' '50' "100%"	Display an image *DEPRECATED!*
+[value=speaker_mood]spokenText; mood; ...						"Lisa_angry" "I hate you!" 					Simple dialog
+bg					(image)path; alpha							bg "bg.png" "100%"							Background image set [graphics not window]
+fade				factor; color								fade "-0.4" "white"							Fade effect for the whole window
+choice				textA; goto_line; textB;...					choice "I do" "7" "I don't" "10"			Choice presenter
+set					varA; valA; varB; valB; ...					set x "5" c "hello"							Assigner/definer
+unset				varA; varB; varC; ...						unset x y z									Deletes a variable
+bad					[none]										bed											Bad end
+good				[none]										good										Good end
+bgcolor				(code||name)color							bgcolor "red"; bgcolor "#ffffff"			Change background color
+play				(url) track_name;							play "motzart.mp3"							Play a track once
+repeat				(url) track_name;							repeat "motzart.mp3"						Play a track on repeat
+shake				[none]										shake										Shakes the screen
+go					line;										go "3"										Goes to a line
+sxor				arg1; arg2; val1; val2;						sxor "3" "2" "1" "0"						Returns val1 if equal, val2 if not.
+
+
+Basic Syntax:
+---------------------------------------------------------------------------------
+[I]		Values will be surrounded with qoutes [as if strings]
+[II]	Commands and variables will be refered normally.
+[III]	Args can be functions evaluated - [cmd arg1 arg2 [cmd2 arg3 arg4...] arg5 arg6...
+
+For example:
+	"value" - this is a value
+	value - this is a variable named value
+	fade "1.0" c - fade is the command, "1.0" is a value and c is a variable
+	It was a cold day - Simple quick text presentation/nerration
