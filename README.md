@@ -1,4 +1,4 @@
-**WeBox** is a free, client-side only, open source web based Visual Novel engine!
+**WeBox** is a free, **client-side only**, open source web based Visual Novel engine!
 It is built upon JS, JQUERY, HTML4 and AJAX only! This is the engine of the Israeli Visual Novel "the white world" (http://thewhiteworld.co.il).
 
 You may fork it to your liking as long as you give us some credit somewhere =)
